@@ -2,7 +2,7 @@
 
 call **limits.h** consts.
 
-```
+```ruby
 puts Limits::CHAR_MAX #=> defined value at limits.h
 ```
 
@@ -10,8 +10,10 @@ puts Limits::CHAR_MAX #=> defined value at limits.h
 
 Write in build_config.rb
 
-```
-conf.gem :github => 'ksss/mruby-limits', :branch => 'master'
+```ruby
+MRuby::Build.new do |conf|
+  conf.gem :github => 'ksss/mruby-limits', :branch => 'master'
+end
 ```
 
 and run in mruby directory.
