@@ -16,10 +16,11 @@ MRuby::Build.new do |conf|
 end
 ```
 
-and run in mruby directory.
+and exec.
 
 ```
 rake clean
 rake test
+rake
 mruby -e 'puts Limits::CHAR_MAX'
 ```
